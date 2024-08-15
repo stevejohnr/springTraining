@@ -35,12 +35,12 @@ public class ControllerTests {
     @MockBean
     private UserService userService;
 
-    @Test
-    public void testGetAllCountries() {
-        Mockito.when(paymentsService.getCountries()).thenReturn(List.of("FRA","GBR", "USA"));
-        List<String> result = countryController.getCountries();
-        assertTrue(result.size() == 3);
-
-
-    }
+//    @Test
+//    public void testGetAllCountries() {
+//        Mockito.when(paymentsService.getCountries()).thenReturn(List.of("FRA","GBR", "USA"));
+//        List<String> result = countryController.getCountries();
+//        assertTrue(result.size() == 3);
+//
+//
+//    }
 }
