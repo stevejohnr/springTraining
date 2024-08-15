@@ -7,7 +7,6 @@ import com.neueda.payments.model.Payment;
 import com.neueda.payments.repositories.PaymentsRepository;
 import com.neueda.payments.service.BootstrapService;
 import com.neueda.payments.service.PaymentsService;
-import com.neueda.payments.service.UserBootstrapService;
 import com.neueda.payments.service.UserService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -19,7 +18,6 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.util.List;
@@ -40,12 +38,6 @@ public class ServiceClassTests {
 
     @MockBean
     private UserService userService;
-
-    @MockBean
-    private UserBootstrapService userBootstrapService;
-
-    @MockBean
-    UserDetailsService userDetailsService;
 
     @MockBean
     BootstrapService bootstrapService;
